@@ -11,7 +11,7 @@ test('E2E login', async ({ page }) => {
   await inputPassword.fill('secret_sauce');
   await expect(inputPassword).toHaveValue('secret_sauce');
 
-  const buttonLogin = page.locator('#login-button');
+  const buttonLogin = page.locator('#login-button'); 
   await buttonLogin.click();
 
   //simpen auth 
